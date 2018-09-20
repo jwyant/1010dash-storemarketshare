@@ -244,7 +244,7 @@ def update_grid(selected_store, start_date, end_date, selected_department, selec
         autosize=True,
         hovermode='closest',
         mapbox=dict(
-            accesstoken='pk.eyJ1Ijoiam9obnd5YW50IiwiYSI6ImNqbTluZ2V2dDR3ajgzcWxpODF2ZW9hMjEifQ.NA9-0Q2wjFGKCKhep6S5Ow',
+            accesstoken=os.environ['MAPBOX_API'],
             bearing=0,
             center=dict(
                 lat=store_dict['lat'],
